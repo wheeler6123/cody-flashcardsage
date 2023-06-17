@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { deleteDeck } from './api/deleteDeck';
 import { getDecks, TDeck } from './api/getDecks';
 import { createDeck } from './api/createDeck';
+import { Header } from './components/Header';
 
 function App() {
   const [title, setTitle] = useState('');
@@ -32,6 +33,8 @@ function App() {
   return (
     <>
       <div className="App">
+          <Header />
+          <h1>Flashcard Decks</h1>
           <form className='createDeckForm' onSubmit={handleCreateDeck}>
             <label htmlFor="deck-title">Deck Title</label>
             <input id='deck-title' type="text" value={title}

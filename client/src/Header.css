@@ -1,0 +1,13 @@
+.Header {
+    height: 60px;
+    width: 100%;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;;
+}
+
+.header-link {
+    padding: 0 20px;
+}
